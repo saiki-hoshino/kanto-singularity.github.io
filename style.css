@@ -1,3 +1,205 @@
+
+/* ==========================================
+   研究会ホームページ用 CSS
+   ========================================== */
+
+
+/* ------------------------------------------
+   1. ページ全体の設定
+   ------------------------------------------ */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    /* 背景色 */
+    background-color: #f3f6fa;
+
+    /* 文字色 */
+    color: #333333;
+
+    /* フォント */
+    font-family:
+        "Noto Sans JP",
+        "Yu Gothic",
+        "Meiryo",
+        sans-serif;
+
+    /* 行間 */
+    line-height: 1.8;
+}
+
+
+/* ------------------------------------------
+   2. ページ上部（ヘッダー）
+   ------------------------------------------ */
+
+header {
+    background-color: #1d3b5b;
+    color: white;
+
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+
+/* ------------------------------------------
+   3. メニュー（ナビゲーション）
+   ------------------------------------------ */
+
+nav {
+    background-color: white;
+    padding: 12px 20px;
+    text-align: center;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+nav a {
+    color: #245985;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------------------
+   4. 本文の表示領域
+   ------------------------------------------ */
+
+main {
+    max-width: 900px;
+
+    margin: 30px auto;
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 8px;
+}
+
+
+/* ------------------------------------------
+   5. 見出し
+   ------------------------------------------ */
+
+h2 {
+    color: #234f7d;
+
+    border-bottom: 2px solid #234f7d;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #245985;
+    margin-top: 25px;
+}
+
+
+/* ------------------------------------------
+   6. リンク
+   ------------------------------------------ */
+
+a {
+    color: #1763a0;
+}
+
+a:hover {
+    color: #0b3d68;
+}
+
+
+/* ------------------------------------------
+   7. 開催情報を囲むボックス
+   ------------------------------------------ */
+
+.info-box {
+    background-color: #e8f1f9;
+
+    padding: 15px 20px;
+    margin: 20px 0;
+
+    border-left: 4px solid #234f7d;
+    border-radius: 4px;
+}
+
+
+/* ------------------------------------------
+   8. 表（講演プログラムなど）
+   ------------------------------------------ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e8f1f9;
+}
+
+
+/* ------------------------------------------
+   9. 画像・PDFリンクなど
+   ------------------------------------------ */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pdf-link {
+    display: inline-block;
+    padding: 8px 14px;
+
+    background-color: #234f7d;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.pdf-link:hover {
+    background-color: #163653;
+    color: white;
+}
+
+
+/* ------------------------------------------
+   10. ページ下部（フッター）
+   ------------------------------------------ */
+
+footer {
+    text-align: center;
+    padding: 20px;
+
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+
+/* ------------------------------------------
+   11. スマートフォン対応
+   ------------------------------------------ */
+
 @media (max-width: 600px) {
 
     header h1 {
